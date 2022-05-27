@@ -19,16 +19,6 @@ addEventListener('click',(e)=>{
        
 })
 
-function cal()
-{
-    if(ecranCalcul.value == "")
-        ecranResultat.value = 0
-    else
-     ecranResultat.value = eval(ecranCalcul.value)
-  
-}
-
-
 setInterval(affichageHeure)
 
 //  IMPLEMENTATIONS DES FONCTIONS 
@@ -51,6 +41,17 @@ function calculer(touche)
            
     }
 }
+
+
+function cal()
+{
+    if(ecranCalcul.value == "")
+        ecranResultat.value = 0
+    else
+     ecranResultat.value = eval(ecranCalcul.value)
+  
+}
+
 
 function affichageHeure()
 {
